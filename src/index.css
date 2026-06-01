@@ -1,11 +1,23 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit&family=PT+Mono&display=swap");
+:root {
+  --bg: #0F1117;
+  --surface: #171923;
+  --card: #1B1F2B;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+
+  --accent: #7C9DFF;
+
+  --border: #2B3245;
+}
 
 body {
   margin: 0;
-  font-family: "PT Mono", monospace !important;
+  font-family: 'Inter', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-color: var(--bg) !important;
+  color: var(--text-primary) !important;
 }

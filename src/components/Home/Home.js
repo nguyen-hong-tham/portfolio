@@ -8,8 +8,9 @@ import Techstack from "../About/Techstack";
 import Github from "../About/Github";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiOutlineFacebook,
+  AiFillPhone,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -30,7 +31,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> NGUYỄN HỒNG THẮM</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -61,42 +62,52 @@ function Home() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://github.com/nguyen-hong-tham"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiFillGithub />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://www.facebook.com/hong.tham.744509"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiOutlineFacebook />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/nguyen-hong-tham-8b1a2523b/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="mailto:nguyenhongtham@gmail.com"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiOutlineMail />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="tel:+84901234567"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillPhone />
                 </a>
               </li>
             </ul>

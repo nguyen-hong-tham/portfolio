@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import goodBookclub_users from "../../Assets/Projects/goodBookclub_users.png";
+import vina_users from "../../Assets/Projects/vina_users.png";
+import fast_food_restaurant from "../../Assets/Projects/fast_food_restaurant .png";
+import MAY_client from "../../Assets/Projects/MAY-client.png";
+import bookept_users from "../../Assets/Projects/bookept_users.png";
 
 function Projects() {
   return (
@@ -23,68 +22,56 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={MAY_client}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="MAY Coffee"
+              description="A full-stack milk tea e-commerce platform built with React, NestJS, and PostgreSQL. Features include customer ordering, product customization, authentication, payment integration, loyalty rewards, and an admin dashboard for managing products, orders, staff, and business analytics. Integrated real-time order tracking with Socket.io, AI-powered product recommendations to help customers choose suitable drinks, and report exporting capabilities (Excel/PDF) for business operations."
+              ghLink="https://github.com/nguyen-hong-tham/MAY"
+              slug="may-coffee"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={vina_users}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Vinabook"
+              description="Vinabook is a full-stack book e-commerce platform built with Next.js, React, and PostgreSQL, providing a customer shopping experience alongside an administrative management dashboard. The system supports authentication, product catalog browsing, category filtering, shopping cart workflows, order management, and user profile management. It integrates an AI-powered chatbot to assist customers with product inquiries and frequently asked questions."
+              ghLink="https://github.com/nguyen-hong-tham/vina_book"
+              slug="vinabook"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={fast_food_restaurant}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="FoodFast"
+              description="A full-stack food ordering platform built with React Native, React, TypeScript, and Appwrite, consisting of a customer mobile application, restaurant management portal, and admin dashboard. The system supports authentication, menu management, order workflows, payment integration, analytics dashboards, and role-based management for customers, restaurants, and administrators. Implemented real-time delivery tracking with GPS/map visualization."
+              ghLink="https://github.com/nguyen-hong-tham/fast-food"
+              slug="foodfast"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={goodBookclub_users}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="GoodBookClub"
+              description="GoodBookClub is a full-stack online bookstore platform built with HTML5, CSS3, JavaScript (ES6+), and LocalStorage API, featuring a customer-facing shopping interface and an administrative management dashboard. The system supports authentication, product browsing, advanced search and filtering, shopping cart workflows, checkout processing, and order history management. It includes admin functionalities for product CRUD operations, customer management, order processing, and revenue statistics dashboards."
+              ghLink="https://github.com/nguyen-hong-tham/Bookstore-Website-"
+              slug="goodbookclub"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={bookept_users}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="BOOKEPT"
+              description="BOOKEPT is an online bookstore platform that supports end-to-end customer purchasing workflows, from product discovery to order completion, alongside a dedicated administrative dashboard designed for operational management and business monitoring. It is integrated with a relational MySQL backend for robust data storage."
+              ghLink="https://github.com/nguyen-hong-tham"
+              slug="bookept"
             />
           </Col>
         </Row>

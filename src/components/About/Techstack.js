@@ -1,144 +1,190 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
-import Go from "../../Assets/TechIcons/go.svg";
-import C from "../../Assets/TechIcons/C++.svg";
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
-import HaskellIcon from "../../Assets/TechIcons/Haskell.svg";
-import Java from "../../Assets/TechIcons/Java.svg";
-import Python from "../../Assets/TechIcons/Python.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
-import Git from "../../Assets/TechIcons/Git.svg";
-import Firebase from "../../Assets/TechIcons/Firebase.svg";
-import Redis from "../../Assets/TechIcons/Redis.svg";
-import Docker from "../../Assets/TechIcons/Docker.svg";
-import Mongo from "../../Assets/TechIcons/Mongo.svg";
-import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
-import Redux from "../../Assets/TechIcons/Redux.svg";
-import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
-import MUI from "../../Assets/TechIcons/MUI.svg";
-import Postman from "../../Assets/TechIcons/Postman.svg";
-import AWS from "../../Assets/TechIcons/AWS.svg";
-import Kafka from "../../Assets/TechIcons/Kafka.svg";
+
+// Import TechIcons
+import React_Icon from "../../Assets/TechIcons/React.svg";
+import Next_Icon from "../../Assets/TechIcons/Next.svg";
+import Typescript_Icon from "../../Assets/TechIcons/Typescript.svg";
+import Javascript_Icon from "../../Assets/TechIcons/Javascript.svg";
+import Tailwind_Icon from "../../Assets/TechIcons/Tailwind.svg";
+import Redux_Icon from "../../Assets/TechIcons/Redux.svg";
+import Node_Icon from "../../Assets/TechIcons/Node.svg";
+import Python_Icon from "../../Assets/TechIcons/Python.svg";
+import CPlusPlus_Icon from "../../Assets/TechIcons/C++.svg";
+import Java_Icon from "../../Assets/TechIcons/Java.svg";
+import Git_Icon from "../../Assets/TechIcons/Git.svg";
+import Docker_Icon from "../../Assets/TechIcons/Docker.svg";
+import Postman_Icon from "../../Assets/TechIcons/Postman.svg";
+import SQL_Icon from "../../Assets/TechIcons/SQL.svg";
+import Firebase_Icon from "../../Assets/TechIcons/Firebase.svg";
+import MUI_Icon from "../../Assets/TechIcons/MUI.svg";
 
 function Techstack() {
-  return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C++" />
-        <div className="tech-icons-text">C++</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="typescript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Go} alt="go" />
-        <div className="tech-icons-text">Go</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Node} alt="node" />
-        <div className="tech-icons-text">Node.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
-        <div className="tech-icons-text">React.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity fontSize={"24px"} />
-        <div className="tech-icons-text">Solidity</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Mongo} alt="mongoDb" />
-        <div className="tech-icons-text">Mongo DB</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redux} alt="redux" />
-        <div className="tech-icons-text">Redux</div>
-      </Col>
+  const skills = {
+    "Frontend Development": [
+      { name: "React", icon: React_Icon },
+      { name: "Next.js", icon: Next_Icon },
+      { name: "TypeScript", icon: Typescript_Icon },
+      { name: "JavaScript (ES6+)", icon: Javascript_Icon },
+      { name: "Tailwind CSS", icon: Tailwind_Icon },
+      { name: "Redux Toolkit", icon: Redux_Icon },
+      { name: "React Query", icon: React_Icon },
+      { name: "React Router", icon: React_Icon },
+      { name: "HTML5 / CSS3", icon: MUI_Icon }
+    ],
+    "Backend Development": [
+      { name: "Node.js", icon: Node_Icon },
+      { name: "NestJS", icon: Node_Icon },
+      { name: "RESTful APIs", icon: Postman_Icon },
+      { name: "Authentication & Authorization", icon: SQL_Icon },
+      { name: "Appwrite", icon: Firebase_Icon },
+      { name: ".NET Core (Basic)", icon: SQL_Icon },
+      { name: "PHP (Basic)", icon: SQL_Icon }
+    ],
+    "Programming Languages": [
+      { name: "C++", icon: CPlusPlus_Icon },
+      { name: "JavaScript", icon: Javascript_Icon },
+      { name: "Python", icon: Python_Icon },
+      { name: "Java", icon: Java_Icon }
+    ],
+    "Database & Data Management": [
+      { name: "PostgreSQL", icon: SQL_Icon },
+      { name: "MySQL", icon: SQL_Icon },
+      { name: "SQL Server", icon: SQL_Icon },
+      { name: "Prisma ORM", icon: SQL_Icon },
+      { name: "Supabase", icon: Firebase_Icon },
+      { name: "LocalStorage API", icon: Javascript_Icon }
+    ],
+    "Tools & Workflow": [
+      { name: "Git / GitHub", icon: Git_Icon },
+      { name: "Docker", icon: Docker_Icon },
+      { name: "Jest", icon: Node_Icon },
+      { name: "GitHub Actions", icon: Git_Icon },
+      { name: "Swagger", icon: Postman_Icon },
+      { name: "Postman", icon: Postman_Icon }
+    ],
+    "Core Concepts": [
+      { name: "Data Structures & Algorithms", icon: CPlusPlus_Icon },
+      { name: "Object-Oriented Programming (OOP)", icon: Java_Icon },
+      { name: "Database Design", icon: SQL_Icon },
+      { name: "System Design (Basic)", icon: Node_Icon },
+      { name: "State Management", icon: Redux_Icon },
+      { name: "Problem Solving", icon: Python_Icon }
+    ]
+  };
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs fontSize={"24px"} />
-        <div className="tech-icons-text">Next.js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="git" />
-        <div className="tech-icons-text">Git</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Firebase} alt="firebase" />
-        <div className="tech-icons-text">Firebase</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redis} alt="redis" />
-        <div className="tech-icons-text">Redis</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Docker} alt="docker" />
-        <div className="tech-icons-text">Docker</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kubernates} alt="kubernetes" />
-        <div className="tech-icons-text">Kubernetes</div>
-      </Col>
+  const [hoveredSkill, setHoveredSkill] = React.useState(null);
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={SQL} alt="SQL" />
-        <div className="tech-icons-text">Postgresql</div>
-      </Col>
+const skillBoxStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "10px",
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
-        <div className="tech-icons-text">Python</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Java} alt="haskell" />
-        <div className="tech-icons-text">Java</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={HaskellIcon} alt="haskell" />
-        <div className="tech-icons-text">Haskell</div>
-      </Col>
+  padding: "12px 18px",
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Tailwind} alt="tailwind" />
-        <div className="tech-icons-text">Tailwind CSS</div>
-      </Col>
+  background: "rgba(18,10,35,0.92)",
+  border: "2px solid rgba(192,132,245,0.45)",
+  borderRadius: "999px",
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={MUI} alt="mui" />
-        <div className="tech-icons-text">Material UI</div>
-      </Col>
+  color: "#e8e8e8",
+  fontSize: "15px",
+  fontWeight: "500",
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Postman} alt="Postman" />
-        <div className="tech-icons-text">Postman</div>
-      </Col>
+  cursor: "pointer",
+  transition: "all .25s ease",
 
-      <Col xs={4} md={2} className="tech-icons">
-        <FaRust fontSize={"24px"} />
-        <div className="tech-icons-text">Rust</div>
-      </Col>
+  minHeight: "62px",
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={AWS} alt="Postman" className="tech-icon-images" />
-        <div className="tech-icons-text">AWS</div>
-      </Col>
+  boxShadow: "0 0 12px rgba(192,132,245,.12)"
+};
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kafka} alt="Kafka" className="tech-icon-images" />
-        <div className="tech-icons-text">Kafka</div>
+const getSkillBoxHoverStyle = () => ({
+  transform: "translateY(-4px)",
+  border: "2px solid #c084f5",
+  boxShadow: "0 0 22px rgba(192,132,245,.35)"
+});
+
+return (
+  <Row
+    style={{
+      justifyContent: "center",
+      paddingBottom: "40px"
+    }}
+  >
+    {Object.entries(skills).map((category, index) => (
+      <Col
+        md={12}
+        key={index}
+        style={{
+          marginBottom: "40px"
+        }}
+      >
+        <h4
+          style={{
+            color: "#c084f5",
+            marginBottom: "26px",
+            textAlign: "center",
+            fontSize: "24px",
+            fontWeight: "600"
+          }}
+        >
+          {category[0]}
+        </h4>
+
+        <Row
+          style={{
+            justifyContent: "center"
+          }}
+        >
+          {category[1].map((skill, skillIndex) => (
+            <Col
+              xs="auto"
+              key={skillIndex}
+              style={{
+                padding: "8px",
+                marginBottom: "10px"
+              }}
+            >
+              <div
+                style={{
+                  ...skillBoxStyle,
+                  ...(hoveredSkill === `${index}-${skillIndex}`
+                    ? getSkillBoxHoverStyle()
+                    : {})
+                }}
+                onMouseEnter={() =>
+                  setHoveredSkill(`${index}-${skillIndex}`)
+                }
+                onMouseLeave={() =>
+                  setHoveredSkill(null)
+                }
+              >
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  style={{
+                    height: "28px",
+                    width: "28px",
+                    objectFit: "contain"
+                  }}
+                />
+
+                <span
+                  style={{
+                    whiteSpace: "nowrap"
+                  }}
+                >
+                  {skill.name}
+                </span>
+              </div>
+            </Col>
+          ))}
+        </Row>
       </Col>
-    </Row>
-  );
+    ))}
+  </Row>
+);
 }
 
 export default Techstack;
