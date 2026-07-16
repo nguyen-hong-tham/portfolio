@@ -229,7 +229,7 @@ const projectsData = [
       "PHP",
       "MySQL"
     ],
-    ghLink: "https://github.com/nguyen-hong-tham",
+    ghLink: "https://github.com/nguyen-hong-tham/nguyen-hong-tham-Bookstore-Website_2",
     roles: [
       {
         name: "Customer Experience",
